@@ -1,5 +1,5 @@
 
-<%=if session[:name] == nil || session[:name].empty?%> 
+<%=if session[:name] == nil || session[:name].empty? || !session[:name]%> 
   <%= link_to login_path%> 
 <%=else%> 
   <h3> hi, <%=#{session[:name]}%></h3>
