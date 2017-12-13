@@ -1,8 +1,7 @@
-require 'pry'
+
 class SessionsController < ApplicationController 
 
   def index 
-    binding.pry
     @session = session[:name]
       
   end 
